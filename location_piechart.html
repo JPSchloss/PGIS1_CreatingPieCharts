@@ -1,0 +1,25 @@
+
+    <html>
+      <head>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+          google.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = new google.visualization.DataTable({"cols":[{"id":"Location","label":"Location","type":"string"},{"id":"Frequency","label":"Frequency","type":"number"}],"rows":[{"c":[{"v":"Earth (Replacement Dimension)"},{"v":139}]},{"c":[{"v":"Abadango"},{"v":1}]},{"c":[{"v":"Testicle Monster Dimension"},{"v":2}]},{"c":[{"v":"Citadel of Ricks"},{"v":91}]},{"c":[{"v":"Worldender's lair"},{"v":9}]},{"c":[{"v":"Anatomy Park"},{"v":11}]},{"c":[{"v":"unknown"},{"v":21}]},{"c":[{"v":"Interdimensional Cable"},{"v":60}]},{"c":[{"v":"Immortality Field Resort"},{"v":3}]},{"c":[{"v":"Signus 5 Expanse"},{"v":2}]},{"c":[{"v":"Post-Apocalyptic Earth"},{"v":10}]},{"c":[{"v":"Purge Planet"},{"v":4}]},{"c":[{"v":"Venzenulon 7"},{"v":1}]},{"c":[{"v":"Bepis 9"},{"v":1}]},{"c":[{"v":"Earth (C-500A)"},{"v":5}]},{"c":[{"v":"Earth (C-137)"},{"v":27}]},{"c":[{"v":"Earth (Evil Rick's Target Dimension)"},{"v":5}]},{"c":[{"v":"Nuptia 4"},{"v":11}]},{"c":[{"v":"Fantasy World"},{"v":4}]},{"c":[{"v":"Planet Squanch"},{"v":13}]},{"c":[{"v":"Mr. Goldenfold's dream"},{"v":8}]},{"c":[{"v":"Rick's Battery Microverse"},{"v":2}]},{"c":[{"v":"The Menagerie"},{"v":3}]},{"c":[{"v":"Hideout Planet"},{"v":2}]},{"c":[{"v":"Zigerion's Base"},{"v":4}]},{"c":[{"v":"Giant's Town"},{"v":3}]},{"c":[{"v":"Unity's Planet"},{"v":6}]},{"c":[{"v":"Dorian 5"},{"v":3}]},{"c":[{"v":"Earth (Unknown dimension)"},{"v":1}]},{"c":[{"v":"St. Gloopy Noops Hospital"},{"v":9}]},{"c":[{"v":"Roy: A Life Well Lived"},{"v":5}]},{"c":[{"v":"Resort Planet"},{"v":5}]},{"c":[{"v":"Interdimensional Customs"},{"v":2}]},{"c":[{"v":"Galactic Federation Prison"},{"v":1}]},{"c":[{"v":"Hamster in Butt World"},{"v":1}]},{"c":[{"v":"Earth (Giant Telepathic Spiders Dimension)"},{"v":2}]},{"c":[{"v":"Alphabetrium"},{"v":5}]},{"c":[{"v":"Gazorpazorp"},{"v":3}]},{"c":[{"v":"Jerryboree"},{"v":8}]},{"c":[{"v":"Pluto"},{"v":6}]},{"c":[{"v":"Kyle's Teenyverse"},{"v":2}]},{"c":[{"v":"Earth (Fascist Dimension)"},{"v":6}]},{"c":[{"v":"Vindicator's Base"},{"v":1}]},{"c":[{"v":"Pawn Shop Planet"},{"v":1}]},{"c":[{"v":"Mega Gargantuan Kingdom"},{"v":1}]},{"c":[{"v":"Gear World"},{"v":3}]},{"c":[{"v":"Snake Planet"},{"v":15}]},{"c":[{"v":"NX-5 Planet Remover"},{"v":3}]},{"c":[{"v":"Zeep Xanflorp's Miniverse"},{"v":1}]},{"c":[{"v":"Froopyland"},{"v":1}]},{"c":[{"v":"Plopstar"},{"v":1}]},{"c":[{"v":"Snuffles' Dream"},{"v":2}]},{"c":[{"v":"Earth (Phone Dimension)"},{"v":3}]},{"c":[{"v":"Earth (Pizza Dimension)"},{"v":2}]},{"c":[{"v":"Greasy Grandma World"},{"v":1}]},{"c":[{"v":"Earth (Chair Dimension)"},{"v":4}]},{"c":[{"v":"Alien Day Spa"},{"v":1}]},{"c":[{"v":"Forbodulon Prime"},{"v":3}]},{"c":[{"v":"Earth (Fascist Shrimp Dimension)"},{"v":4}]},{"c":[{"v":"Earth (Fascist Teddy Bear Dimension)"},{"v":2}]},{"c":[{"v":"Earth (Wasp Dimension)"},{"v":6}]},{"c":[{"v":"Monogatron Mothership"},{"v":4}]},{"c":[{"v":"Midland Quasar"},{"v":2}]},{"c":[{"v":"Mount Space Everest"},{"v":1}]},{"c":[{"v":"Globaflyn"},{"v":2}]},{"c":[{"v":"Gorgon Quadrant"},{"v":1}]},{"c":[{"v":"Heist-Con"},{"v":10}]},{"c":[{"v":"Heistotron Base"},{"v":5}]},{"c":[{"v":"Gramuflack"},{"v":2}]},{"c":[{"v":"Draygon"},{"v":6}]},{"c":[{"v":"Non-Diegetic Alternative Reality"},{"v":1}]},{"c":[{"v":"Tickets Please Guy Nightmare"},{"v":7}]},{"c":[{"v":"Story Train"},{"v":27}]},{"c":[{"v":"Morty’s Story"},{"v":6}]},{"c":[{"v":"Ricks’s Story"},{"v":6}]},{"c":[{"v":"Glorzo Asteroid"},{"v":8}]},{"c":[{"v":"Alien Acid Plant"},{"v":4}]},{"c":[{"v":"Merged Universe"},{"v":6}]},{"c":[{"v":"Near-Duplicate Reality"},{"v":4}]},{"c":[{"v":"Gaia"},{"v":5}]},{"c":[{"v":"Defiance's Ship"},{"v":1}]},{"c":[{"v":"Defiance's Base"},{"v":1}]}]});
+
+            var options = {
+              title: 'Locations Rick and Morty Characters',
+              colors: ["#65C1E8", "#69ad53", "#314e1c", "#365829", "#c7fa6c", "#62a4ab"]
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+      </body>
+    </html>
+    

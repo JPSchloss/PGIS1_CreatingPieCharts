@@ -1,0 +1,25 @@
+
+    <html>
+      <head>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+          google.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = new google.visualization.DataTable({"cols":[{"id":"Origin","label":"Origin","type":"string"},{"id":"Frequency","label":"Frequency","type":"number"}],"rows":[{"c":[{"v":"Earth (C-137)"},{"v":32}]},{"c":[{"v":"Earth (Replacement Dimension)"},{"v":87}]},{"c":[{"v":"Abadango"},{"v":1}]},{"c":[{"v":"unknown"},{"v":272}]},{"c":[{"v":"Signus 5 Expanse"},{"v":1}]},{"c":[{"v":"Post-Apocalyptic Earth"},{"v":10}]},{"c":[{"v":"Purge Planet"},{"v":4}]},{"c":[{"v":"Venzenulon 7"},{"v":1}]},{"c":[{"v":"Bepis 9"},{"v":1}]},{"c":[{"v":"Earth (C-500A)"},{"v":6}]},{"c":[{"v":"Earth (Evil Rick's Target Dimension)"},{"v":5}]},{"c":[{"v":"Nuptia 4"},{"v":7}]},{"c":[{"v":"Fantasy World"},{"v":4}]},{"c":[{"v":"Bird World"},{"v":2}]},{"c":[{"v":"Gromflom Prime"},{"v":3}]},{"c":[{"v":"Rick's Battery Microverse"},{"v":2}]},{"c":[{"v":"The Menagerie"},{"v":1}]},{"c":[{"v":"Earth (K-83)"},{"v":1}]},{"c":[{"v":"Hideout Planet"},{"v":1}]},{"c":[{"v":"Cronenberg Earth"},{"v":2}]},{"c":[{"v":"Giant's Town"},{"v":3}]},{"c":[{"v":"Unity's Planet"},{"v":5}]},{"c":[{"v":"Earth (Unknown dimension)"},{"v":1}]},{"c":[{"v":"Anatomy Park"},{"v":6}]},{"c":[{"v":"Earth (J19ζ7)"},{"v":1}]},{"c":[{"v":"Roy: A Life Well Lived"},{"v":5}]},{"c":[{"v":"Eric Stoltz Mask Earth"},{"v":1}]},{"c":[{"v":"Glaagablaaga"},{"v":1}]},{"c":[{"v":"Gazorpazorp"},{"v":6}]},{"c":[{"v":"Resort Planet"},{"v":5}]},{"c":[{"v":"Hamster in Butt World"},{"v":1}]},{"c":[{"v":"Earth (Giant Telepathic Spiders Dimension)"},{"v":2}]},{"c":[{"v":"Alphabetrium"},{"v":4}]},{"c":[{"v":"Earth (5-126)"},{"v":1}]},{"c":[{"v":"Krootabulon"},{"v":2}]},{"c":[{"v":"Pluto"},{"v":6}]},{"c":[{"v":"Zeep Xanflorp's Miniverse"},{"v":2}]},{"c":[{"v":"Larva Alien's Planet"},{"v":1}]},{"c":[{"v":"Mr. Goldenfold's dream"},{"v":5}]},{"c":[{"v":"Earth (K-22)"},{"v":2}]},{"c":[{"v":"Mr. Meeseeks Box"},{"v":2}]},{"c":[{"v":"Mega Gargantuan Kingdom"},{"v":1}]},{"c":[{"v":"Gear World"},{"v":3}]},{"c":[{"v":"Earth (D-99)"},{"v":1}]},{"c":[{"v":"Earth (D716)"},{"v":1}]},{"c":[{"v":"Earth (D716-B)"},{"v":1}]},{"c":[{"v":"Earth (D716-C)"},{"v":1}]},{"c":[{"v":"Earth (J-22)"},{"v":1}]},{"c":[{"v":"Planet Squanch"},{"v":2}]},{"c":[{"v":"Detoxifier"},{"v":2}]},{"c":[{"v":"Kyle's Teenyverse"},{"v":1}]},{"c":[{"v":"Trunk World"},{"v":2}]},{"c":[{"v":"Plopstar"},{"v":1}]},{"c":[{"v":"Girvonesk"},{"v":1}]},{"c":[{"v":"Snuffles' Dream"},{"v":2}]},{"c":[{"v":"Interdimensional Cable"},{"v":14}]},{"c":[{"v":"Earth (Phone Dimension)"},{"v":3}]},{"c":[{"v":"Earth (Pizza Dimension)"},{"v":2}]},{"c":[{"v":"Greasy Grandma World"},{"v":1}]},{"c":[{"v":"Earth (Chair Dimension)"},{"v":4}]},{"c":[{"v":"Testicle Monster Dimension"},{"v":1}]},{"c":[{"v":"Árboles Mentirosos"},{"v":1}]},{"c":[{"v":"Citadel of Ricks"},{"v":1}]},{"c":[{"v":"Earth (Fascist Dimension)"},{"v":5}]},{"c":[{"v":"Earth (Fascist Shrimp Dimension)"},{"v":4}]},{"c":[{"v":"Earth (Fascist Teddy Bear Dimension)"},{"v":2}]},{"c":[{"v":"Earth (Wasp Dimension)"},{"v":8}]},{"c":[{"v":"Midland Quasar"},{"v":2}]},{"c":[{"v":"Globaflyn"},{"v":2}]},{"c":[{"v":"Mount Olympus"},{"v":2}]},{"c":[{"v":"Plitzville Montana"},{"v":1}]},{"c":[{"v":"Earth (Tusk Dimension)"},{"v":1}]},{"c":[{"v":"Gramuflack"},{"v":2}]},{"c":[{"v":"Draygon"},{"v":7}]},{"c":[{"v":"Snake Planet"},{"v":14}]},{"c":[{"v":"Story Train"},{"v":29}]},{"c":[{"v":"Tickets Please Guy Nightmare"},{"v":7}]},{"c":[{"v":"Morty’s Story"},{"v":6}]},{"c":[{"v":"Ricks’s Story"},{"v":5}]},{"c":[{"v":"Glorzo Asteroid"},{"v":8}]},{"c":[{"v":"Merged Universe"},{"v":4}]},{"c":[{"v":"Near-Duplicate Reality"},{"v":6}]},{"c":[{"v":"Gaia"},{"v":4}]}]});
+
+            var options = {
+              title: 'Origins of the Characters in Rick and Morty',
+              colors: ["#65C1E8", "#69ad53", "#314e1c", "#365829", "#c7fa6c", "#62a4ab"]
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+      </body>
+    </html>
+    

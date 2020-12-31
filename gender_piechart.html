@@ -1,0 +1,25 @@
+
+    <html>
+      <head>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+          google.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = new google.visualization.DataTable({"cols":[{"id":"Gender","label":"Gender","type":"string"},{"id":"Frequency","label":"Frequency","type":"number"}],"rows":[{"c":[{"v":"Male"},{"v":499}]},{"c":[{"v":"Female"},{"v":111}]},{"c":[{"v":"unknown"},{"v":44}]},{"c":[{"v":"Genderless"},{"v":17}]}]});
+
+            var options = {
+              title: 'Genders of the Characters in Rick and Morty',
+              colors: ["#65C1E8", "#69ad53", "#314e1c", "#365829", "#c7fa6c", "#62a4ab"]
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+      </body>
+    </html>
+    

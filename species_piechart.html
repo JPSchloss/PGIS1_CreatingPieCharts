@@ -1,0 +1,25 @@
+
+    <html>
+      <head>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+          google.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = new google.visualization.DataTable({"cols":[{"id":"Species","label":"Species","type":"string"},{"id":"Frequency","label":"Frequency","type":"number"}],"rows":[{"c":[{"v":"Human"},{"v":310}]},{"c":[{"v":"Alien"},{"v":186}]},{"c":[{"v":"Humanoid"},{"v":46}]},{"c":[{"v":"unknown"},{"v":10}]},{"c":[{"v":"Poopybutthole"},{"v":7}]},{"c":[{"v":"Mythological Creature"},{"v":36}]},{"c":[{"v":"Animal"},{"v":44}]},{"c":[{"v":"Robot"},{"v":17}]},{"c":[{"v":"Cronenberg"},{"v":8}]},{"c":[{"v":"Disease"},{"v":6}]},{"c":[{"v":"Planet"},{"v":1}]}]});
+
+            var options = {
+              title: 'Character Species in Rick and Morty',
+              colors: ["#65C1E8", "#69ad53", "#314e1c", "#365829", "#c7fa6c", "#62a4ab"]
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+      </body>
+    </html>
+    
