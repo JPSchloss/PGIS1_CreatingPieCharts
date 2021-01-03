@@ -13,14 +13,6 @@
 
 # The output of this program is four Google chart html files. They can be opened in a browser.
 
-# Note: the program may take a minute to run as the api only delivers results one page at a time.
-# To collect all the data, iterative API calls need to be conducted and processed and that can take a second.
-# Also, the code should be more concise since the code repeats. If this is a problem, please let me know and
-# I can work to fix it. I tried to keep the code as consistent with the demo as possible, because I thought
-# that was expected. Rather than presenting drastic differences in the code. If I am wrong in this assumption,
-# please let me know and I can correct it. And, as a fun note, the locations pie chart kinda looks like the portal
-# from the show and I hoped that one of the charts would come out like that.
-
 # Importing necessary packages.
 import urllib.request
 import urllib.error
